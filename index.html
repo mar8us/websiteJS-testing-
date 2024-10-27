@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="credit-card" id = "card">
+            <div class="card-front">
+                <div class="icons">
+                    <img src="img/chip.png" class="card-chip">
+                    <img src="img/visa-logo.png" class="visa-logo">
+                </div>   
+
+                <div class="card-number">
+                    <div class="group">
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                    </div>
+                    <div class="group">
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                    </div>
+                    <div class="group">
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                    </div>
+                    <div class="group">
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                        <span class="card_numer_display">#</span>
+                    </div>
+                </div>    
+                <div class="details">
+                    <div>
+                        <span>Card Holder</span>
+                        <span id="card-holder-display"></span>        
+                    </div>
+                    <div>
+                        <span>Expires</span>
+                        <span id = "validity">06/38</span>
+                    </div>
+                </div>                                   
+            </div>  
+            <div class="card-back">
+                <div class="black-strip"></div>
+                <div class="white-strip">
+                    <span>CVV</span>
+                    <div>
+                    <span id="cvv-display"></span>   </div>
+                </div>
+                <img src="img/visa-logo.png" class="visa-logo">>
+            </div>
+        </div>
+    
+        
+        <div class="form">
+            <form id="creditCardForm">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required><br><br>
+            
+                <label for="card-holder-name">Card Name:</label>
+                <input type="text" id="card-holder-input" name="cardName" required><br><br>
+                
+                <div class="flexDivDateCw"> 
+    
+                    <div class="expDate">
+                        <label for="expiryDate">Expiration Date:</label>
+                        <input type="month" id="expiryDate" name="expiryDate" ><br><br>
+                    </div>
+    
+                    <div class="cardCw">                      
+                        <label for="cardCvv">CW:</label>
+                        <input type="text" id="cardCvv" name="cardCvv" maxlength="3" required><br><br>
+                    </div> 
+                    
+                </div>    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/card-input-display.js"></script>
+</body>

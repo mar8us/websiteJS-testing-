@@ -1,0 +1,146 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: darkgreen;
+}
+
+.wrapper {
+    border-radius: 1em;
+    perspective: 800px;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.credit-card {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
+
+.form {
+    margin-top: 12em;
+    background: lightgray;
+    padding: 5%;
+    border-radius: 5%;
+    align-items: center;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
+    box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
+}
+
+.card-front, .card-back
+{
+    margin-top: 3em;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    padding: 1.3em 0em;
+    background: gray;
+    border-radius: 15px;
+    height: 150px;
+    align-items: center;
+    justify-items: center;
+    backface-visibility: hidden;
+    color: white;
+    background: url("../img/card.png");
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-back .black-strip {
+    position: relative;
+    background-color: black;
+    height: 50px;
+    width: inherit;
+}
+
+.card-back .white-strip {
+    top: 1em;
+    position: relative;
+    text-align: right;
+    width: inherit;
+}
+
+.card-back .white-strip span {
+    margin-right: 1em;
+}
+
+.card-back .white-strip div {
+    height: 30px;
+    background-color: white;
+    margin-top: 0.5em;
+    color:black;
+}
+
+.card-number {
+    display: flex;               
+    justify-content: center;   
+    font-size: 18px;    
+    justify-self: center;   
+    margin-top: 0.5em;    
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 0.9em;
+    width: 95%; 
+    margin: 1.8em;
+}
+
+.details span {
+    display: block;
+}
+
+.card-back .visa-logo {
+    position: absolute;
+    width: 50px;
+    margin-top: 1.3em;
+    right: 0em;
+}
+
+.group {
+    display: flex;            
+    margin: 0 5px;            
+}
+
+.card_numer_display {
+    width: 15px;              
+    height: 40px;            
+    text-align: center;        
+    margin: 0 2px;             
+    line-height: 40px;    
+    font-size: 15px;     
+}
+
+.card-chip {
+    width: 40px; 
+    height: auto;  
+    padding-left: 1em;
+}
+
+.visa-logo {
+    width: 70px; 
+    height: auto; 
+    padding-right: 1em;
+}
+
