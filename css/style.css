@@ -32,10 +32,12 @@ body, html {
     padding: 5%;
     border-radius: 5%;
     align-items: center;
+    justify-content: center;
     -webkit-box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
     -moz-box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
     box-shadow: 8px 8px 24px 0px rgba(90, 66, 70, 1);
 }
+
 
 .card-front, .card-back
 {
@@ -54,6 +56,11 @@ body, html {
     background: url("../img/card.png");
 }
 
+.card-back 
+{
+    transform: rotateY(180deg);
+}
+
 .icons {
     display: flex;
     align-items: center;
@@ -61,9 +68,6 @@ body, html {
     width: 100%;
 }
 
-.card-back {
-    transform: rotateY(180deg);
-}
 
 .card-back .black-strip {
     position: relative;
@@ -143,4 +147,3 @@ body, html {
     height: auto; 
     padding-right: 1em;
 }
-
