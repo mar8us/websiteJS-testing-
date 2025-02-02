@@ -66,23 +66,25 @@
     
         
         <div class="form">
-            <form id="creditCardForm">
+            <br id="creditCardForm">
                 <label for="card-number">Card Number:</label>
-                <input type="text" id="card-number" required><br><br>
+                <input type="text" id="card-number" required><br></br>
             
                 <label for="card-holder-name">Card Name:</label>
-                <input type="text" id="card-holder-input" name="cardName" required><br><br>
-                
+                <input type="text" id="card-holder-input" name="cardName" required><br></br>
+                <p id="error-message" style="color: red; display: none;">Pole zawiera niedozwolone znaki</p>
+
                 <div class="flexDivDateCw"> 
     
                     <div class="expDate">
                         <label for="expiryDate">Expiration Date:</label>
-                        <input type="month" id="expiryDate" name="expiryDate" ><br><br>
+                        <input type="month" id="expiryDate" name="expiryDate" ><br></br>
                     </div>
     
                     <div class="cardCw">                      
                         <label for="cardCvv">CW:</label>
-                        <input type="text" id="cardCvv" name="cardCvv" maxlength="3" required><br><br>
+                        <input type="text" id="cardCvv" name="cardCvv" maxlength="3" required><br></br>
+                        <p id="error-messageCvv" style="color: red; display: none;">Pole zawiera niedozwolone znaki</p>
                     </div> 
                     
                 </div>    
